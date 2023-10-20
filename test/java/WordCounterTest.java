@@ -9,10 +9,11 @@ public class WordCounterTest {
     @Test
     void countWordsTest(){
         //Given
-        int expectedOutput = 2;
+        int expectedOutcome = 6;
         //When
-        int expectedResult = wordCounter.countWords(createEssayTest.expectedResult);
+        String essay = "hallo, doei, en toen was er";
+        int expectedResult = wordCounter.countWords(essay);
         //Then
-        Assertions.assertEquals(expectedOutput, expectedResult);
+        Assertions.assertEquals(expectedOutcome, expectedResult);
     }
 }

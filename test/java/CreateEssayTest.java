@@ -5,7 +5,6 @@ public class CreateEssayTest {
 
     CreateEssay createEssay = new CreateEssay();
     String[] vblistWords = {"hello", "hallo", "welkom", "test", "Senna"};
-    String expectedResult = createEssay.writeEssay(2, vblistWords);
 
     @Test
     void RandomIntTest() {
@@ -22,7 +21,7 @@ public class CreateEssayTest {
 
     @Test
     void WriteEssayTest() {
-        Assertions.assertFalse(createEssay.writeEssay(3, vblistWords).isEmpty());
+        Assertions.assertFalse(createEssay.writeEssay(createEssay.randomInt(), createEssay.listWords()).isEmpty());
 
 
     }
